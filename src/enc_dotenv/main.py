@@ -5,11 +5,6 @@ import pyAesCrypt
 __BUFFER__SIZE__ = 64 * 1024
 
 
-def _get_env_file_full_path(env_file_dir, file_name):
-    env_file_full_path = "{}/{}".format(env_file_dir, file_name)
-    return env_file_full_path
-
-
 def load_encrypted_dotenv(enc_env_file_path, enc_password_file, buffer_size=__BUFFER__SIZE__, verbose=False,
                           override=False, **kwargs):
     # test decrypted file from here
@@ -26,7 +21,3 @@ def encrypt_dotenv(env_file_path, enc_env_file_path, enc_password_file, buffer_s
         enc_password = f_key.read()
 
     pyAesCrypt.encryptFile(env_file_path, enc_env_file_path, enc_password, buffer_size)
-
-#
-# def decrypt_dotenv(env_path, environment: Environment, key):
-#     pass
