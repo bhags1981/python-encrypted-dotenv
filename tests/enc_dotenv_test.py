@@ -1,5 +1,4 @@
 import dotenv
-import io
 import os
 import pyAesCrypt
 
@@ -41,4 +40,7 @@ class TestEncDotenv(TestCase):
         enc_env_file_name = "test.enc.env"
         enc_env_file = enc_env_file_path + "/" + enc_env_file_name
         password_file = enc_env_file_path + "/test.password"
-        load_encrypted_dotenv(enc_env_file, password_file, )
+        load_encrypted_dotenv(enc_env_file, password_file, verbose=True)
+        self.assertEqual(os.environ.get('SOME_SETTING_1'), "A")
+        self.assertEqual(os.environ.get('SOME_SETTING_2'), "B")
+        self.assertEqual(os.environ.get('INT_SETTING'), "1")
