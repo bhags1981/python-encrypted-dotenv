@@ -1,0 +1,14 @@
+include LICENSE *.md *.yml
+
+include tox.ini
+include .bumpversion.cfg
+include .coveragerc
+include .editorconfig
+include Makefile
+include requirements.txt
+include *.toml
+recursive-include src *.py
+recursive-include src *.typed
+recursive-include tests *.py
+recursive-include tests *.env
+recursive-include tests *.password
