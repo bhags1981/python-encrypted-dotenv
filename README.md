@@ -1,6 +1,6 @@
-# python-encrypted-dotenv
+# python-encrypted-dotenv[![Coverage Status](https://coveralls.io/repos/github/bhags1981/python-encrypted-dotenv/badge.svg?branch=master)](https://coveralls.io/github/bhags1981/python-encrypted-dotenv?branch=master)
 Encrypt your env file for python-dotenv. 
-[![Coverage Status](https://coveralls.io/repos/github/bhags1981/python-encrypted-dotenv/badge.svg?branch=master)](https://coveralls.io/github/bhags1981/python-encrypted-dotenv?branch=master)
+
 python-encrypted-dotenv 
 ===============================================================================
 
