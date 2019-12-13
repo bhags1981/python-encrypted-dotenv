@@ -11,7 +11,18 @@ Changelog
 Latest
 -----
 
-0.1.0
------
 
+0.0.3
+-----
+Fixed dependency error.
+
+0.0.2
+-----
+Added load_encrypted_dotenv
+
+
+0.0.1
+-----
 - First commit
+
+
