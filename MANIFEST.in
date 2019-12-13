@@ -10,6 +10,6 @@ include *.toml
 recursive-include src *.py
 recursive-include src *.typed
 recursive-include tests *.py
-recursive-include tests *.env
-recursive-include tests *.password
-recursive-include tests *.enc
+exclude tests *.password
+exclude tests *.env
+exclude tests *.enc
